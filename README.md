@@ -62,3 +62,22 @@ caffeine-consumption-ml/
 │
 ├── requirements.txt
 └── README.md
+
+## Contribution & Project Ownership
+
+This repository represents a **two-phase project**:
+
+### Phase 1 – Statistical Analysis (Group Project)
+- Conducted as a **group academic project** during the previous academic year
+- Included survey design, data collection, questionnaire development, and statistical analysis
+- Group report, datasets, and questionnaires are included **for academic context and continuity**
+
+### Phase 2 – Machine Learning & Application (Solo Work)
+- Independently upgraded and extended the project in the current academic year
+- Designed and implemented:
+  - Machine learning workflows in Python
+  - Feature engineering and modeling
+  - Streamlit-based caffeine intake calculator
+- Responsible for **all code, app development, deployment, and documentation** in this phase
+
+**All Python ML code, Streamlit app, README, and deployment are solely my individual work.**
