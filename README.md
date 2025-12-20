@@ -3,6 +3,8 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
 ![Status](https://img.shields.io/badge/Status-Deployed-success)
 
+### 🌐 Live Demo
+https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app/
 
 # Caffeine Consumption Analysis \& ML-Based Intake Calculator
 End-to-end data science project that evolved from a statistical research study into a machine learning powered Python application with an interactive Streamlit dashboard.
