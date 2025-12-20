@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Status-Deployed-success)
+
+
 # Caffeine Consumption Analysis \& ML-Based Intake Calculator
 End-to-end data science project that evolved from a statistical research study into a machine learning powered Python application with an interactive Streamlit dashboard.
 This project demonstrates skills across data collection, statistical analysis, machine learning, and deployment.
@@ -28,3 +34,24 @@ Analyzed caffeine intake patterns across demographics
 Exam vs regular day consumption modeling
 Feature-driven prediction and behavior analysis
 Model evaluation using appropriate metrics
+
+## Repository structure
+caffeine-consumption-ml/
+│
+├── caffeine_calculator/                    
+│   └── app.py
+│
+├── machine_learning/         
+│   └── ml.ipynb
+│
+├── data/ 
+│   └── analysiss.csv
+│   ├── market data.xlsx
+│   └── Pilot Study.Data.xlsx
+|
+├── statistical-analysis/  
+│   ├── REPORT.pdf
+│   └── Questionnaire.docx
+│
+├── requirements.txt
+└── README.md
