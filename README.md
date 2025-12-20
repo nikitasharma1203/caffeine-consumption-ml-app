@@ -25,6 +25,12 @@ Built and deployed a real-time caffeine intake calculator web app
 * Personalized safe caffeine limit based on body weight
 * Visual feedback for safe vs excessive intake
 
+## 📸 Application Preview
+
+![Home Screen](screenshots/home.png)
+![Caffeine Calculation](screenshots/result.png)
+
+
 ## Tech Stack
 * Python
 * Streamlit
