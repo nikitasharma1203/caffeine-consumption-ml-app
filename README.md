@@ -43,25 +43,7 @@ Feature-driven prediction and behavior analysis
 Model evaluation using appropriate metrics
 
 ## Repository structure
-caffeine-consumption-ml/
-│
-├── caffeine_calculator/
-│   └── app.py   # solo
-│
-├── machine_learning/
-│   └── ml.ipynb   # solo
-│
-├── data/
-│   ├── analysis.csv   # group
-│   ├── market data.xlsx
-│   └── Pilot Study.Data.xlsx
-│
-├── statistical-analysis/   # group
-│   ├── REPORT.pdf
-│   └── Questionnaire.docx
-│
-├── requirements.txt
-└── README.md
+caffeine-consumption-ml/ │ ├── caffeine_calculator/ │ └── app.py # solo │ ├── machine_learning/ │ └── ml.ipynb # solo │ ├── data/ │ ├── analysis.csv # group │ ├── market data.xlsx │ └── Pilot Study.Data.xlsx │ ├── statistical-analysis/ # group │ ├── REPORT.pdf │ └── Questionnaire.docx │ ├── requirements.txt └── README.md
 
 
 ## Contribution & Project Ownership
