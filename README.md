@@ -46,19 +46,23 @@ Model evaluation using appropriate metrics
 caffeine-consumption-ml/
 │
 ├── caffeine_calculator/                    
-│   └── app.py
+│   └── app.py              #solo
 │
+
 ├── machine_learning/         
-│   └── ml.ipynb
+│   └── ml.ipynb            #solo
 │
+
 ├── data/ 
-│   └── analysiss.csv
+│   └── analysiss.csv       #group
 │   ├── market data.xlsx
 │   └── Pilot Study.Data.xlsx
+
 |
-├── statistical-analysis/  
+├── statistical-analysis/  #group
 │   ├── REPORT.pdf
 │   └── Questionnaire.docx
+
 │
 ├── requirements.txt
 └── README.md
