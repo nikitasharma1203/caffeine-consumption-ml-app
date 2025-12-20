@@ -6,12 +6,16 @@
 
 # Caffeine Consumption Analysis \& ML-Based Intake Calculator
 End-to-end data science project that evolved from a statistical research study into a machine learning powered Python application with an interactive Streamlit dashboard.
+
 This project demonstrates skills across data collection, statistical analysis, machine learning, and deployment.
 
 ### Project Summary and Problem Statement
 Conducted a large-scale survey-based statistical study on caffeine consumption among university students
+
 Applied hypothesis testing, non-parametric statistics, and data visualization
+
 Upgraded the project into a machine learning workflow in Python and used clustering, PCA, regression, classification and outlier detection
+
 Built and deployed a real-time caffeine intake calculator web app
 
 ### Live Application – Caffeine Intake Calculator
@@ -31,8 +35,11 @@ Built and deployed a real-time caffeine intake calculator web app
 
 ## Machine Learning 
 Analyzed caffeine intake patterns across demographics
+
 Exam vs regular day consumption modeling
+
 Feature-driven prediction and behavior analysis
+
 Model evaluation using appropriate metrics
 
 ## Repository structure
