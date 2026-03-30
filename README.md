@@ -36,7 +36,7 @@ Model evaluation using appropriate metrics
 
 ## Repository structure
 
-'''
+```
 caffeine-consumption-ml/
 ├── caffeine_calculator/        # solo
 │   └── app.py
@@ -51,7 +51,7 @@ caffeine-consumption-ml/
 │   └── Questionnaire.docx
 ├── requirements.txt
 └── README.md
-'''
+```
 
 
 ## Contribution & Project Ownership
