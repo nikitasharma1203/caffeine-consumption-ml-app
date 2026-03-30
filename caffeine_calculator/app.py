@@ -1,5 +1,5 @@
 # caffeine_dashboard.py
-# ☕ Caffeine Intake Calculator (Multi-Drink Session)
+# ☕ Coffee Themed Caffeine Calculator
 
 import streamlit as st
 import pandas as pd
@@ -8,10 +8,50 @@ import pandas as pd
 # PAGE CONFIG
 # -------------------------------
 st.set_page_config(page_title="Caffeine Intake Calculator", layout="wide")
-st.title("☕ Caffeine Intake Calculator (Multi-Drink Session)")
 
 # -------------------------------
-# CAFFEINE DATA (mg per 100ml)
+# CUSTOM CSS (COFFEE THEME)
+# -------------------------------
+st.markdown("""
+    <style>
+    body {
+        background-color: #f5f1e6;
+    }
+    .main {
+        background-color: #f5f1e6;
+    }
+    h1, h2, h3 {
+        color: #4b2e2e;
+    }
+    .stButton>button {
+        background-color: #6f4e37;
+        color: white;
+        border-radius: 10px;
+        padding: 8px 16px;
+        border: none;
+    }
+    .stButton>button:hover {
+        background-color: #4b2e2e;
+        color: #fff;
+    }
+    .css-1d391kg {
+        background-color: #e8dcc7;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# -------------------------------
+# HERO SECTION
+# -------------------------------
+st.markdown("""
+# ☕ Brew. Sip. Track.
+
+### *"Because every cup tells a story — make sure yours stays balanced."*
+---
+""")
+
+# -------------------------------
+# CAFFEINE DATA
 # -------------------------------
 caffeine_data = {
     "Tea": {
@@ -31,33 +71,34 @@ caffeine_data = {
 }
 
 # -------------------------------
-# SESSION STATE FOR DRINKS
+# SESSION STATE
 # -------------------------------
 if "drinks" not in st.session_state:
     st.session_state["drinks"] = pd.DataFrame(columns=["Type", "Brand", "Size", "Servings", "Caffeine_mg"])
 
 # -------------------------------
-# SIDEBAR INPUTS
+# SIDEBAR
 # -------------------------------
-st.sidebar.header("Add a Drink")
+st.sidebar.header("☕ Add Your Drink")
 
 weight = st.sidebar.number_input("Your Weight (kg):", min_value=30, value=70)
 drink_type = st.sidebar.selectbox("Drink Type:", list(caffeine_data.keys()))
-brand = st.sidebar.selectbox("Select Brand:", list(caffeine_data[drink_type].keys()))
+brand = st.sidebar.selectbox("Brand:", list(caffeine_data[drink_type].keys()))
 size = st.sidebar.number_input("Cup Size (ml):", min_value=50, step=50, value=250)
 servings = st.sidebar.number_input("Servings:", min_value=1, value=1)
 
 # -------------------------------
-# CALCULATE CAFFEINE PER CUP
+# CALCULATION
 # -------------------------------
 caffeine_per_100ml = caffeine_data[drink_type][brand]
 caffeine_per_cup = (caffeine_per_100ml / 100) * size
-st.sidebar.write(f"☕ Caffeine per cup: {caffeine_per_cup:.2f} mg")
+
+st.sidebar.markdown(f"**☕ Per Cup:** `{caffeine_per_cup:.2f} mg`")
 
 # -------------------------------
 # BUTTONS
 # -------------------------------
-if st.sidebar.button("Add Drink"):
+if st.sidebar.button("➕ Add Drink"):
     caffeine_amount = caffeine_per_cup * servings
     new_row = {
         "Type": drink_type,
@@ -66,27 +107,47 @@ if st.sidebar.button("Add Drink"):
         "Servings": servings,
         "Caffeine_mg": round(caffeine_amount, 2)
     }
-    st.session_state["drinks"] = pd.concat([st.session_state["drinks"], pd.DataFrame([new_row])], ignore_index=True)
+    st.session_state["drinks"] = pd.concat(
+        [st.session_state["drinks"], pd.DataFrame([new_row])],
+        ignore_index=True
+    )
 
-if st.sidebar.button("🔄 Refresh Session"):
-    st.session_state["drinks"] = pd.DataFrame(columns=["Type", "Brand", "Size", "Servings", "Caffeine_mg"])
+if st.sidebar.button("🔄 Reset Session"):
+    st.session_state["drinks"] = pd.DataFrame(
+        columns=["Type", "Brand", "Size", "Servings", "Caffeine_mg"]
+    )
 
 # -------------------------------
-# MAIN PANEL
+# MAIN DISPLAY
 # -------------------------------
-st.subheader("Drinks Summary")
-st.dataframe(st.session_state["drinks"])
+st.subheader("📋 Your Coffee Log")
 
-if st.sidebar.button("Calculate Total"):
+if st.session_state["drinks"].empty:
+    st.info("No drinks added yet ☕")
+else:
+    st.dataframe(st.session_state["drinks"], use_container_width=True)
+
+# -------------------------------
+# CALCULATE TOTAL
+# -------------------------------
+if st.button("📊 Analyze My Intake"):
+
     total_caf = st.session_state["drinks"]["Caffeine_mg"].sum()
     limit = 2.5 * weight
 
-    st.subheader("Results")
-    st.write(f"☕ Total Caffeine Consumed: {total_caf:.2f} mg")
+    st.subheader("📊 Results")
 
+    # Progress bar
+    progress = min(total_caf / limit, 1.0)
+    st.progress(progress)
+
+    st.write(f"**Total Caffeine:** {total_caf:.2f} mg")
+    st.write(f"**Safe Limit:** {limit:.2f} mg")
+
+    # Status message
     if total_caf < limit:
-        st.success(f"✅ You're within the safe limit of {limit:.2f} mg.")
+        st.success("✅ You're in the safe zone. Enjoy your brew!")
     elif total_caf == limit:
-        st.info("⚖️ You're exactly at the recommended limit.")
+        st.warning("⚖️ Right at the edge. Maybe skip the next cup?")
     else:
-        st.error(f"⚠️ Warning: You exceeded the safe limit of {limit:.2f} mg!")
+        st.error("🚨 Too much caffeine! Time to switch to water.")
