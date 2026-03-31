@@ -3,25 +3,25 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
 ![Status](https://img.shields.io/badge/Status-Deployed-success)
 
-### 🌐 Live Demo
+### 🌐 Demo
 https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app/
 
 # Caffeine Consumption Analysis & ML-Based Intake Calculator
-End-to-end project that evolved from a statistical research study into a machine learning powered Python application with an interactive Streamlit dashboard.
+End to end project that evolved from a statistical research study into a machine learning powered Python application with dashboard.
 
 ### Project Summary and Problem Statement
 Conducted a large scale primary data survey based statistical study on caffeine consumption among university students
 
-Applied hypothesis testing, non-parametric statistics, and data visualization in R
+Applied hypothesis testing, non-parametric statistics and data visualization in R
 
 Upgraded the project into a machine learning workflow in Python and used clustering, PCA, regression, classification and outlier detection
 
-Built and deployed a real-time caffeine intake calculator web app
+Built and deployed caffeine intake calculator web app
 
-### Live Application – Caffeine Intake Calculator
+### Application: Caffeine Intake Calculator
 #### Features:
-* Multi-drink session tracking
-* Brand-wise caffeine estimation
+* Multi drink session tracking
+* Brand wise caffeine estimation
 * Personalized safe caffeine limit based on body weight
 * Visual feedback for safe vs excessive intake
 
@@ -30,7 +30,7 @@ Analyzed caffeine intake patterns across demographics
 
 Exam vs regular day consumption modeling
 
-Feature-driven prediction and behavior analysis
+Feature driven prediction and behavior analysis
 
 Model evaluation using appropriate metrics
 
@@ -56,15 +56,15 @@ caffeine-consumption-ml/
 
 ## Contribution & Project Ownership
 
-This repository represents a **two-phase project**:
+This repository represents a **two phase project**:
 
-### Phase 1 – Statistical Analysis (Group Project)
+### Phase 1: Statistical Analysis (Group Project)
 - Conducted as a group academic project during the previous academic year
-- Included survey design, data collection, questionnaire development, and statistical analysis
-- Group report, datasets, and questionnaires are included for academic context and continuity
+- Included survey design, data collection, questionnaire development and statistical analysis
+- Group report, datasets and questionnaires are included for academic context and continuity
 - Investigates caffeine consumption among science faculty students through:
-  **surveys (primary data), market data (door-to-door collection), and chemical analysis (laboratory experimentation)**. 
-- It explores brand preferences, intake patterns across genders and academic years, and the impact on sleep and focus. Statistical methods such as:
+  **surveys (primary data), market data (door-to-door collection) and chemical analysis (laboratory experimentation)**. 
+- Statistical methods such as:
   **reliability testing, normality checks, parametric and non-parametric tests** were applied to validate findings. 
   
 
@@ -75,11 +75,6 @@ This repository represents a **two-phase project**:
   - Feature engineering and modeling
   - Streamlit-based caffeine intake calculator
 - Responsible for **all code, app development, deployment, and documentation** in this phase
-- This machine learning extension analyzes caffeine consumption patterns among 320 university students. The pipeline covers **regression, classification, clustering, PCA, and outlier detection**. 
-- Regression models predict exam-day intake from regular habits with strong performance (R² ≈ 0.75), showing tea and spending as key drivers. 
-- Classification experiments grouped students into Very Low, Low, Medium, and High consumers, with **linear SVM achieving ~70% accuracy** and outperforming tree-based models. 
-- PCA reduced six beverage features to two components, retaining ~43% variance, highlighting mainstream vs. alternative choices and intensity of preference. K-Means clustering (k=5, silhouette ≈ 0.52) revealed personas: Light Consumers, Moderate Consumers, Exam Spikers, and rare Extreme Consumers. 
-- Outlier detection flagged ~10% of students with unusually high exam spending (up to ₹210/day). 
-- Together, these methods provide predictive insights, behavioral segmentation, and wellness-oriented recommendations for caffeine use under academic stress.
+- The pipeline covers **regression, classification, clustering, PCA, and outlier detection**. 
 
-**All Python ML code, Streamlit app, README, and deployment are solely my individual work.**
+**All Python ML code, Streamlit app, README and deployment are solely my individual work.**
