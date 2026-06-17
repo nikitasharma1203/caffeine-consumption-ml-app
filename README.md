@@ -2,12 +2,7 @@
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge&logo=pandas)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)
 ![Streamlit](https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app/)
-![Statistics](https://img.shields.io/badge/Statistics-Nonparametric-green?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
 </p>
 
@@ -25,16 +20,6 @@ Survey design • Sampling • Chemical assays • Statistical inference
 **Phase 2 (Independent Extension)**  
 Machine Learning • Clustering • PCA • Outlier Detection • Streamlit Application
 
-</p>
-
-<p align="center">
-
-**Live Application:** https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app/
-
-**Repository:** https://github.com/nikitasharma1203/caffeine-consumption-ml-app
-
-</p>
-
 ---
 
 ## Demo
@@ -43,7 +28,7 @@ Machine Learning • Clustering • PCA • Outlier Detection • Streamlit Appl
 
 <!-- Replace with screenshots -->
 
-<img src="images/app_home.png" width="750"/>
+<img src="caffeine_calculator/app_dash.png" width="750"/>
 
 </p>
 
