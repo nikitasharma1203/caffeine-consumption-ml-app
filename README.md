@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge&logo=pandas)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red?style=for-the-badge&logo=streamlit)
+![Streamlit](https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app/)
 ![Statistics](https://img.shields.io/badge/Statistics-Nonparametric-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
@@ -29,7 +29,7 @@ Machine Learning • Clustering • PCA • Outlier Detection • Streamlit Appl
 
 <p align="center">
 
-**Live Application:** https://caffeine-consumption-ml-app.streamlit.app/
+**Live Application:** https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app/
 
 **Repository:** https://github.com/nikitasharma1203/caffeine-consumption-ml-app
 
