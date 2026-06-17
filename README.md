@@ -2,11 +2,9 @@
 
 <p align="center">
 
-![Streamlit](https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app)
 
 </p>
-
-<p align="center">
 
 An end-to-end analytics project studying caffeine consumption among university students, combining survey statistics, chemical assays, machine learning, and an interactive Streamlit application.
 
