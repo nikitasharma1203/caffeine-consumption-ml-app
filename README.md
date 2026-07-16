@@ -6,7 +6,7 @@
 
 </p>
 
-An end-to-end analytics project studying caffeine consumption among university students, combining survey statistics, chemical assays, machine learning, and an interactive Streamlit application.
+An end-to-end analytics project studying caffeine consumption among university students, combining survey statistics, chemical assays, machine learning, and an interactive Streamlit application — later extended into an original startup concept.
 
 </p>
 
@@ -17,6 +17,9 @@ Survey design • Sampling • Chemical assays • Statistical inference
 
 **Phase 2 (Independent Extension)**  
 Machine Learning • Clustering • PCA • Outlier Detection • Streamlit Application
+
+**Phase 3 (Concept Extension)**  
+Startup Pitch • Behavioral Design • Interactive Prototype
 
 ---
 
@@ -48,6 +51,7 @@ Machine Learning • Clustering • PCA • Outlier Detection • Streamlit Appl
   - K-Means Clustering
   - Outlier Detection
 - Developed a Streamlit caffeine calculator using lab-verified caffeine concentrations and personalized intake thresholds.
+- Translated the research into **The Nudge Café** — a startup pitch applying validated mood/consumption patterns to real-world café design, with an interactive seat-assignment prototype.
 
 ---
 
@@ -68,8 +72,13 @@ caffeine-consumption-ml/
 ├── machine_learning/
 │   └── ml.ipynb
 
-└── caffeine_calculator/
-    └── app.py
+├── caffeine_calculator/
+│   └── app.py
+
+└── the-nudge-cafe/
+    ├── The_Nudge_Cafe_Pitch_Deck.pptx
+    ├── seat_quiz.html
+    └── floor_plan.svg
 ```
 
 ---
@@ -94,6 +103,8 @@ I later extended the project independently to transform the research into an ana
 - PCA and clustering analyses
 - Outlier detection
 - An interactive Streamlit caffeine calculator
+
+Most recently, I extended the findings a third time — out of the lab and into a product concept — by designing **The Nudge Café**, a pitch for a café that reads a customer's mood and motive on entry and matches them to a seating zone, ambience, and menu built around it.
 
 ---
 
@@ -265,6 +276,31 @@ The application uses session state to enable live recalculation as drinks are ad
 
 ---
 
+## Phase 3 — The Nudge Café (Concept Extension)
+
+A third extension of this project, moving the findings from analysis into a product concept: **The Nudge Café**, a pitch for a café that asks a customer how they're doing before seating them, then matches them to one of four zones — Focus, Gather, Date, or Calm — each with its own seating shape, color palette, and menu.
+
+The concept is a direct application of two findings from Phase 1: that mood and motive states (exam stress, sleep debt, social context) measurably shift consumption behavior, and that environmental design (color, seating shape, pattern) is known to shift arousal and behavior in turn. The Nudge Café combines both into a single check-in-to-seating flow.
+
+### Deliverables
+
+- **Pitch deck** (`the-nudge-cafe/The_Nudge_Cafe_Pitch_Deck.pptx`) — problem, research-backed insight, the four-zone product design, business model, market sizing, and roadmap.
+- **Seat-assignment prototype** (`the-nudge-cafe/seat_quiz.html`) — a standalone, no-dependency HTML questionnaire that scores a short Likert-scale check-in and assigns a zone in the browser.
+- **Floor plan** (`the-nudge-cafe/floor_plan.svg`) — a rough top-down layout showing how the four zones, counter, and check-in kiosk fit into a physical space.
+
+### The four zones
+
+| Zone | Seating | Ambience | Menu |
+|------|---------|----------|------|
+| Focus | Long communal tables, upright chairs | Bold color, near-silent | Espresso, cold brew, black filter |
+| Gather | Round tables, bubbly cluster chairs | Warm tones, upbeat playlist | Sharing platters, coolers |
+| Date | Small two-seaters, set close | Dim warm light, dusty rose | Affogato, dessert pairings |
+| Calm | Deep lounge seating, swirl pattern | Muted sage, soft diffuse light | Herbal tea, decaf, turmeric milk |
+
+This phase is a concept and design exercise rather than a deployed product — no live venue, transaction data, or user testing exists yet.
+
+---
+
 ## Project Pipeline
 
 ```text
@@ -289,6 +325,12 @@ Streamlit Application
         │
         ▼
 Personalized Intake Calculator
+        │
+        ▼
+The Nudge Café
+├── Pitch Deck
+├── Seat-Assignment Prototype
+└── Floor Plan Concept
 ```
 
 ---
@@ -313,6 +355,8 @@ pip install -r requirements.txt
 streamlit run caffeine_calculator/app.py
 ```
 
+To try the seat-assignment prototype, open `the-nudge-cafe/seat_quiz.html` directly in a browser — no install required.
+
 ---
 
 ## Limitations
@@ -322,6 +366,7 @@ streamlit run caffeine_calculator/app.py
 - Statistical and machine learning analyses identify associations rather than causal relationships.
 - Classification and clustering results should be treated as exploratory due to the modest sample size.
 - Chemical assays estimated caffeine concentration by brand rather than individual consumption.
+- The Nudge Café is a design concept validated against Phase 1 findings only; it has not been tested with real customers or a physical pilot.
 
 ---
 
@@ -360,6 +405,17 @@ Contributions include:
 - Outlier detection
 - Streamlit caffeine calculator
 - Repository maintenance
+
+### Phase 3 — Concept Extension
+
+Developed independently by **Nikita Sharma**
+
+Contributions include:
+
+- The Nudge Café concept and business design
+- Pitch deck
+- Interactive seat-assignment prototype
+- Floor plan concept
 
 ---
 
