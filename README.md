@@ -2,6 +2,9 @@
 
 <p align="center">
 
+
+[![Open in Google Slides](https://img.shields.io/badge/Google%20Slides-View%20Pitch%20Deck-F4B400?logo=googleslides&logoColor=white)](https://docs.google.com/presentation/d/1hVIZ5rNr0uAQx7OlgUEo-5zd3pliDiAL/edit?usp=sharing&ouid=114329543527148350067&rtpof=true&sd=true)
+
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://caffeine-consumption-ml-app-cswxdgjaeyhngcyhzq9atk.streamlit.app)
 
 </p>
@@ -75,10 +78,8 @@ caffeine-consumption-ml/
 ├── caffeine_calculator/
 │   └── app.py
 
-└── the-nudge-cafe/
-    ├── The_Nudge_Cafe_Pitch_Deck.pptx
-    ├── seat_quiz.html
-    └── floor_plan.svg
+└── The_Nudge_Cafe_Pitch_Deck.pptx
+
 ```
 
 ---
@@ -282,11 +283,6 @@ A third extension of this project, moving the findings from analysis into a prod
 
 The concept is a direct application of two findings from Phase 1: that mood and motive states (exam stress, sleep debt, social context) measurably shift consumption behavior, and that environmental design (color, seating shape, pattern) is known to shift arousal and behavior in turn. The Nudge Café combines both into a single check-in-to-seating flow.
 
-### Deliverables
-
-- **Pitch deck** (`the-nudge-cafe/The_Nudge_Cafe_Pitch_Deck.pptx`) — problem, research-backed insight, the four-zone product design, business model, market sizing, and roadmap.
-- **Seat-assignment prototype** (`the-nudge-cafe/seat_quiz.html`) — a standalone, no-dependency HTML questionnaire that scores a short Likert-scale check-in and assigns a zone in the browser.
-- **Floor plan** (`the-nudge-cafe/floor_plan.svg`) — a rough top-down layout showing how the four zones, counter, and check-in kiosk fit into a physical space.
 
 ### The four zones
 
@@ -418,7 +414,3 @@ Contributions include:
 - Floor plan concept
 
 ---
-
-## License
-
-MIT License
